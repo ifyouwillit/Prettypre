@@ -1,0 +1,30 @@
+code, pre { font-family: Consolas, Monaco, "Courier New", Courier, monospace; color: #000; }
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://fonts.gstatic.com/s/pressstart2p/v3/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
+}
+
+pre {
+	background: #f3f3f7;
+	border: 1px solid #dedee3;
+	padding: 11px;
+	font-size: 12px;
+	line-height: 1.3em;
+	margin-bottom: 22px;
+	overflow: auto;
+}
+
+.linuxterminal {
+	background:#000000;
+	color:#ffffff;
+}
+
+.apple2e {
+	background:#000000;
+	color:#67e744;
+	font-size: 16px;
+	font-family: 'Press Start 2P', Arial, serif; 
+	font-weight: 50;
+}
