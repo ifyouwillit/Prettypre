@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Prettypre
  * Plugin URI: http://prettypre.com
- * Description: Plugin to customize the diplay of the &#60;pre&#62; tag in WordPress.  Easily select a theme for the pre tag and click apply.  No need to add any additional information to your custom CSS.
+ * Description: Plugin to customize the display of the &#60;pre&#62; tag in WordPress.  Easily select a theme for the pre tag and click apply.  No need to add any additional information to your custom CSS.
  * Version: 1.0
  * Author: Mendel Kurland
  * Author URI: http://mendel.me/about
