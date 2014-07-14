@@ -8,7 +8,7 @@
  * Author URI: http://mendel.me/about
  * License: GPL2
  *
- *  Copyright YEAR  Mendel Kurland  (email : git@mendel.me)
+ *  Copyright 2014  Mendel Kurland  (email : git@mendel.me)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -27,10 +27,9 @@
 require_once( plugin_dir_path( __FILE__ ) . '/options.php' );
 
 function change_to_pretty_pre() {
-
 	wp_enqueue_style( "prettypre", "/wp-content/plugins/prettypre/prettyprecss.php?style=".get_option('selectstyle')); 
 }
 
 add_action ( 'wp_enqueue_scripts', 'change_to_pretty_pre' );
-?>
 
+?>

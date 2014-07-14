@@ -19,33 +19,46 @@ function register_mysettings() {
 }
 
 function prettypre_settings_page() {
+
 ?>
 
 <div class="wrap">
 
-<h2>Pretty Pre Settings</h2>
+	<h2>Pretty Pre Settings</h2>
+	
+	<!-- Initiate admin style classes -->
+	<link rel="stylesheet" type="text/css" href="/wp-content/plugins/prettypre/prettyprecss.php?admin=1" />
 
-<link rel="stylesheet" type="text/css" href="/wp-content/plugins/prettypre/prettyprecss.php?admin=1" />
+	<form method="post" action="options.php">
 
-<form method="post" action="options.php">
+		<?php settings_fields( 'prettypre-settings-group' ); ?>
 
-<?php settings_fields( 'prettypre-settings-group' ); ?>
+		<h3>Select a pre theme (this theme will become active throughout your entire site.)</h3>
+		
+		<div style="float:left;"><input type="radio" name=selectstyle value="1" <? if (get_option('selectstyle')=="1") { echo "checked"; }?>></div>
+		<div class="standard" style="float:left;">&#60;&#63;php  // Default pre style &#63;&#62;</div>
 
-<h3>Select a pre theme (this theme will become active throughout your entire site.)</h3>
-<hr>
+		<div style="clear:both;padding:5px;"><hr></div>
 
-<div class="standard"><input type="radio" name=selectstyle value="1" <? if (get_option('selectstyle')=="1") { echo "checked"; }?>>Default</div>
-<br>
-<div class="apple"><input type="radio" name=selectstyle value="2" <? if (get_option('selectstyle')=="2") { echo "checked"; }?>>Apple2e</div>
-<br>
-<div class="linux"><input type="radio" name=selectstyle value="3" <? if (get_option('selectstyle')=="3") { echo "checked"; }?>>Linux</div>
+		<div style="float:left;"><input type="radio" name=selectstyle value="2" <? if (get_option('selectstyle')=="2") { echo "checked"; }?>></div>
+		<div class="apple" style="float:left;">&#60;&#63;php  // Apple2e pre style &#63;&#62;</div>
 
-    
-    <p class="submit">
-    <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
-    </p>
+		<div style="clear:both;padding:5px;"><hr></div>
 
-</form>
+		<div style="float:left;"><input type="radio" name=selectstyle value="3" <? if (get_option('selectstyle')=="3") { echo "checked"; }?>></div>
+		<div class="linux" style="float:left;">&#60;&#63;php  // Linux pre style &#63;&#62;</div>
+
+		<div style="clear:both;padding:5px;"><hr></div>
+
+		<p class="submit">
+
+			<input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
+
+		</p>
+
+	</form>
+
 </div>
-<?php } ?>
 
+This is an open source project and a work in progress.  You can learn more at <a href="http://prettypre.com" target="_blank">The Prettypre Website</a> or contribute to the plugin at <a href="https://github.com/ifyouwillit/Prettypre" target="_blank">Github</a>.
+<?php } ?>
