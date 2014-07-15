@@ -9,14 +9,24 @@ function prettypre_create_menu() {
 
 	//call register settings function
 	add_action( 'admin_init', 'register_mysettings' );
+	
+	add_action('admin_print_scripts-' . $page_hook_suffix, 'prettypre_admin_scripts');
 }
 
+function prettypre_admin_scripts() {
+
+	/* Link our already registered script to a page */
+	wp_enqueue_script( 'jquery-ui-core' );
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_style( 'prettypre-admin',plugins_url( "/prettyprecss.php?admin=1&style=".get_option('selectstyle')."&ts=".get_option('textsize'), __FILE__ ));
+}
 
 function register_mysettings() {
 
 	//register our settings
 	register_setting( 'prettypre-settings-group', 'selectstyle' );
 	register_setting( 'prettypre-settings-group', 'textsize' );
+
 }
 
 function prettypre_settings_page() {
@@ -27,14 +37,6 @@ function prettypre_settings_page() {
 
 	<h2>Pretty Pre Settings</h2>
 	
-	<!-- Initiate admin style classes -->
-	<link rel="stylesheet" type="text/css" href="<?php echo plugins_url( "/prettyprecss.php?admin=1&style=".get_option('selectstyle')."&ts=".get_option('textsize'), __FILE__ ) ?>" />
-	<link rel="stylesheet" href="<?php echo plugins_url( "/jquery-ui.css", __FILE__ ) ?>">
-	
-	<!-- Initiate admin javascript for slider -->
-	<script src="<?php echo plugins_url( "/jquery-1.10.2.js", __FILE__ ) ?>"></script>
-	<script src="<?php echo plugins_url( "/jquery-ui.js", __FILE__ ) ?>"></script>
-
 	<script>
 
 		$(function() {
