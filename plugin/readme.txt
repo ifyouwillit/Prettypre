@@ -8,11 +8,11 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Plugin to customize the diplay of the <pre> tag in WordPress. Easily select a theme for the pre tag and click apply. No need to add any additional information to your custom CSS.
+Plugin to customize the display of the <pre> tag in WordPress. Easily select a theme for the pre tag and click apply. No need to add any additional information to your custom CSS.
 
 == Description ==
 
-Plugin to customize the diplay of the <pre> tag in WordPress. Easily select a theme for the pre tag and click apply. No need to add any additional information to your custom CSS.
+Plugin to customize the display of the <pre> tag in WordPress. Easily select a theme for the pre tag and click apply. No need to add any additional information to your custom CSS.
 
 == Installation ==
 
@@ -32,6 +32,4 @@ Yes
 
 = 1.0 =
 * The plugin is born!
-
-`<?php code(); // goes in backticks ?>`
 
