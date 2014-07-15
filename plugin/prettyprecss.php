@@ -21,6 +21,7 @@ pre, .standard { /* Standard pre style */
 	font-size: 12px !important;
 	line-height: 1.3em !important;
 	overflow: auto !important;
+	font-size: <?php echo $_GET['ts']; ?>px !important;
 }
 
 <? } if (($_GET['style']=='3') || ($_GET['admin']=='1')) { ?>
@@ -29,6 +30,7 @@ pre, .linux { /* Linux Terminal */
 	background:#000000 !important;
 	color:#ffffff !important;
 	padding: 11px !important;
+	font-size: <?php echo $_GET['ts']; ?>px !important;
 }
 
 <? } if (($_GET['style']=='2') || ($_GET['admin']=='1')) { ?>
@@ -36,10 +38,11 @@ pre, .linux { /* Linux Terminal */
 pre, .apple { /* Apple IIe */
 	background:#000000 !important;
 	color:#67e744 !important;
-	font-size: 16px !important;
+	font-size: <?php echo $_GET['ts']; ?>px !important;
 	font-family: 'Press Start 2P', Arial, serif !important; 
 	font-weight: 50 !important;
 	padding: 11px !important;
 }
 
 <? } ?>
+
