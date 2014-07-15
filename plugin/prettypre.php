@@ -27,9 +27,10 @@
 require_once( plugin_dir_path( __FILE__ ) . '/options.php' );
 
 function change_to_pretty_pre() {
-	wp_enqueue_style( "prettypre", plugins_url( "/prettyprecss.php?style=".get_option('selectstyle') , __FILE__ )); 
+	wp_enqueue_style( "prettypre", 	plugins_url( "/prettyprecss.php?style=".get_option('selectstyle')."&ts=".get_option('textsize'), __FILE__ ) ); 
 }
 
 add_action ( 'wp_enqueue_scripts', 'change_to_pretty_pre' );
 
 ?>
+
