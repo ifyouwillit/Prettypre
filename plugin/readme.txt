@@ -1,18 +1,17 @@
 === Plugin Name ===
 Contributors: ifyouwillit
 Donate link: http://prettypre.com/
-Tags: pre tag, tags, code tag, custom css
+Tags: pre tag, tags, code tag, custom css, syntax highlighter, css
 Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
+Tested up to: 3.9.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Plugin to customize the display of the <pre> tag in WordPress. Easily select a theme for the pre tag and click apply. No need to add any additional information to your custom CSS.
+Plugin to customize the display of the pre tag in WordPress. Easily select a theme for the pre tag and click apply. No need to add any additional information to your custom CSS.
 
 == Description ==
 
-Plugin to customize the display of the <pre> tag in WordPress. Easily select a theme for the pre tag and click apply. No need to add any additional information to your custom CSS.
+With two clicks, skin the CSS of your pre tags like oldschool operating/hardware terminals and change the size of text. Will add new styles periodically.  You can also select the standard pre CSS format if you choose.  If you have suggestions or would like to contribute, get in touch!
 
 == Installation ==
 

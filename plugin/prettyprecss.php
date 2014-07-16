@@ -44,4 +44,12 @@ pre, .apple { /* Apple IIe */
 	padding: 11px !important;
 }
 
+<? } if (($_GET['style']=='4') || ($_GET['admin']=='1')) { ?>
+
+pre, .suzette { /* Linux Terminal */
+	background:#000000 !important;
+	color:#FF00FF !important;
+	padding: 11px !important;
+	font-size: <?php echo $_GET['ts']; ?>px !important;
+}
 <? } ?>
