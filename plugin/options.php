@@ -58,7 +58,7 @@ function prettypre_settings_page() {
 
 		<div style="float:left;">
 		<input type="radio" name=selectstyle value="4" <? if (get_option('selectstyle')=="4") { echo "checked"; }?>></div>
-		<div class="linux" style="float:left;">&#60;&#63;php  // Suzette's (@mt_Suzette) pre style &#63;&#62;</div>
+		<div class="suzette" style="float:left;">&#60;&#63;php  // Suzette's (@mt_Suzette) pre style &#63;&#62;</div>
 
 		<div style="clear:both;padding:5px;"><hr></div>
 

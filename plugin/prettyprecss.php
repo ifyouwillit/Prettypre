@@ -46,7 +46,7 @@ pre, .apple { /* Apple IIe */
 
 <? } if (($_GET['style']=='4') || ($_GET['admin']=='1')) { ?>
 
-pre, .suzette { /* Linux Terminal */
+pre, .suzette { /* Suzette Terminal */
 	background:#000000 !important;
 	color:#FF00FF !important;
 	padding: 11px !important;
