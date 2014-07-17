@@ -40,25 +40,31 @@ function prettypre_settings_page() {
 
 		<h3>Select a pre theme (this theme will become active throughout your entire site.)</h3>
 		
-		<div style="float:left;"><input type="radio" name=selectstyle value="1" <? if (get_option('selectstyle')=="1") { echo "checked"; }?>></div>
+		<div style="float:left;"><input type="radio" name="selectstyle" value="1" <? if (get_option('selectstyle')=="1") { echo "checked"; }?>></div>
 		<div class="standard" style="float:left;">&#60;&#63;php  // Default pre style &#63;&#62;</div>
 
 		<div style="clear:both;padding:5px;"><hr></div>
 
-		<div style="float:left;"><input type="radio" name=selectstyle value="2" <? if (get_option('selectstyle')=="2") { echo "checked"; }?>></div>
-		<div class="apple" style="float:left;">&#60;&#63;php  // Apple2e pre style &#63;&#62;</div>
+		<div style="float:left;"><input type="radio" name="selectstyle" value="2" <? if (get_option('selectstyle')=="2") { echo "checked"; }?>></div>
+		<div class="apple" style="float:left;">] REM --APPLE IIE</div>
 
 		<div style="clear:both;padding:5px;"><hr></div>
 
 		<div style="float:left;">
-		<input type="radio" name=selectstyle value="3" <? if (get_option('selectstyle')=="3") { echo "checked"; }?>></div>
-		<div class="linux" style="float:left;">&#60;&#63;php  // Linux pre style &#63;&#62;</div>
+		<input type="radio" name="selectstyle" value="3" <? if (get_option('selectstyle')=="3") { echo "checked"; }?>></div>
+		<div class="linux" style="float:left;">$ mkdir BashCommandLine</div>
 
 		<div style="clear:both;padding:5px;"><hr></div>
 
 		<div style="float:left;">
-		<input type="radio" name=selectstyle value="4" <? if (get_option('selectstyle')=="4") { echo "checked"; }?>></div>
-		<div class="suzette" style="float:left;">&#60;&#63;php  // Suzette's (@mt_Suzette) pre style &#63;&#62;</div>
+
+		<input type="radio" name="selectstyle" value="4" <? if (get_option('selectstyle')=="4") { echo "checked"; }?>></div>
+		<div class="suzette" style="float:left;">&#60;style&#62;  /* Suzette's (@mt_Suzette) pre style */ &#60;/style&#62;</div>
+
+		<div style="clear:both;padding:5px;"><hr></div>
+		<div style="float:left;">
+		<input type="radio" name="selectstyle" value="5" <? if (get_option('selectstyle')=="5") { echo "checked"; }?>></div>
+		<div class="dos" style="float:left;">C:\>DOSSTYLE.EXE</div>
 
 		<div style="clear:both;padding:5px;"><hr></div>
 
@@ -94,3 +100,4 @@ function prettypre_settings_page() {
 
 This is an open source project and a work in progress.  You can learn more at <a href="http://prettypre.com" target="_blank">The Prettypre Website</a> or contribute to the plugin at <a href="https://github.com/ifyouwillit/Prettypre" target="_blank">Github</a>.
 <?php } ?>
+

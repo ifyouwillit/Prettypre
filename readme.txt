@@ -4,6 +4,7 @@ Donate link: http://prettypre.com/
 Tags: pre tag, tags, code tag, custom css, syntax highlighter, css
 Requires at least: 3.0.1
 Tested up to: 3.9.1
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,4 +32,10 @@ Yes
 
 = 1.0 =
 * The plugin is born!
+
+= 1.1 =
+* Added pink font
+
+= 1.2 =
+* Added DOS prompt theme
 
