@@ -67,6 +67,16 @@ function prettypre_settings_page() {
 		<div class="dos" style="float:left;">C:\>DOSSTYLE.EXE</div>
 
 		<div style="clear:both;padding:5px;"><hr></div>
+		<div style="float:left;">
+		<input type="radio" name="selectstyle" value="6" <? if (get_option('selectstyle')=="6") { echo "checked"; }?>></div>
+		<div class="commodore" style="float:left;">Commodore 64</div>
+
+		<div style="clear:both;padding:5px;"><hr></div>
+		<div style="float:left;">
+		<input type="radio" name="selectstyle" value="7" <? if (get_option('selectstyle')=="7") { echo "checked"; }?>></div>
+		<div class="hand" style="float:left;">&lt;?php echo "my handwriting"; ?&gt;</div>
+
+		<div style="clear:both;padding:5px;"><hr></div>
 
 		<div style="width:50%;">
 		
