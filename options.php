@@ -100,4 +100,3 @@ function prettypre_settings_page() {
 
 This is an open source project and a work in progress.  You can learn more at <a href="http://prettypre.com" target="_blank">The Prettypre Website</a> or contribute to the plugin at <a href="https://github.com/ifyouwillit/Prettypre" target="_blank">Github</a>.
 <?php } ?>
-

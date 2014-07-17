@@ -33,4 +33,3 @@ function change_to_pretty_pre() {
 add_action ( 'wp_enqueue_scripts', 'change_to_pretty_pre' );
 
 ?>
-

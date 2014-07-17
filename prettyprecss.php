@@ -73,4 +73,3 @@ pre, .dos { /* DOS Terminal */
 	font-size: <?php echo $_GET['ts']+2; ?>px !important;
 }
 <? } ?>
-
