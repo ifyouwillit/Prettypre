@@ -17,6 +17,10 @@ function prettypre_admin_scripts() {
 	/* Link our already registered script to a page */
 
 	wp_enqueue_style( 'prettypre-admin',plugins_url("/prettyprecss.php?admin=1&style=".get_option('selectstyle')."&ts=".get_option('textsize'), __FILE__ ));
+	wp_enqueue_style( 'prettypre-admin',plugins_url("/styles/shCoreDefault.css", __FILE__ ));
+	wp_enqueue_script( 'highlighter',plugins_url("/inithighlighter.js", __FILE__ ), 'shbrush, shcore');
+	wp_enqueue_script( 'shbrush',plugins_url("/scripts/shBrushJScript.js", __FILE__ ));
+	wp_enqueue_script( 'shcore',plugins_url("/scripts/shCore.js", __FILE__ ));
 }
 
 function register_mysettings() {
